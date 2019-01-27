@@ -7,16 +7,14 @@ export default {
         img: 'http://www.fillmurray.com/200/200',
         description: 'King in the North, supposed bastard of Eddark Stark, leader of the Night\'s Watch',
         likes: [
-          'Dogs',
-          'Long walks on the beach',
-          'Chopin',
-          'Tacos'
+          'Direwolves',
+          'Knowing nothing',
+          'Leading'
         ],
         dislikes: [
-          'Birds',
-          'Red things',
-          'Danish food',
-          'Dead Batteries'
+          'Whitewalkers',
+          'Army of the Dead',
+          'Heights'
         ],
         inOffice: false
       },
@@ -27,16 +25,16 @@ export default {
         img: 'http://www.fillmurray.com/200/201',
         description: 'Lady the House Targaryen, the First of Her Name, The Unburnt, Queen of the Andals, the Rhoynar and the First Men, Queen of Meereen, Khaleesi of the Great Grass Sea, Protector of the Realm, Lady Regent of the Seven Kingdoms, Breaker of Chains and Mother of Dragons',
         likes: [
-          'Frank',
-          'Manchester United',
-          'Football',
-          'Programming'
+          'Dragons',
+          'Ruling',
+          'People who bend the knee',
+          'Long titles'
         ],
         dislikes: [
-          'Dogs',
-          'Long walks on the beach',
-          'Chopin',
-          'Tacos'
+          'Slavery',
+          'Chains',
+          'The Lannisters',
+          'The Iron Throne'
         ],
         inOffice: true
       },
@@ -47,13 +45,15 @@ export default {
         img: 'http://www.fillmurray.com/200/202',
         description: 'Dwarf and member of House Lannister of Casterly Rock, one of the wealthiest and most powerful families in the continent of Westeros.',
         likes: [
-          'Cats',
-          'the beach',
-          'Chopin',
-          'Blue things'
+          'Wine',
+          'Wits',
+          'The Game',
+          'The realm'
         ],
         dislikes: [
-          'Birds'
+          'Cersei',
+          'Tywin',
+          'Joffery'
         ],
         inOffice: false
       },
@@ -64,14 +64,23 @@ export default {
         img: 'http://www.fillmurray.com/200/204',
         description: 'The younger daughter and third child of Lord Eddard Stark and his wife Lady Catelyn Stark. She is tomboyish, headstrong, feisty, independent, disdains traditional female pursuits, and is often mistaken for a boy',
         likes: [
-          'Talking Spanish',
-          'Spanish food',
-          'Spanish things',
-          'Football'
+          'Killing',
+          'Vengance',
+          'Faces',
+          'Family'
         ],
         dislikes: [
-          'Not talking spanish',
-          'Chopin'
+          'Joffrey',
+          'Cersei',
+          'Walder Frey',
+          'Meryn Trant',
+          'Tywin',
+          'The Red Woman',
+          'Beric Dondarrion',
+          'Thoros of Myr',
+          'Ilyn Payne',
+          'The Mountain',
+          'The Hound'
         ],
         inOffice: true
       },
@@ -82,16 +91,13 @@ export default {
         img: 'http://www.fillmurray.com/200/206',
         description: 'Former Squire to Tyrion Lannister, and current squire to Brienne of Tarth. The one who will sit on the iron throne',
         likes: [
-          'Dogs',
-          'Long walks on the beach',
-          'Chopin',
-          'Tacos'
+          'Loyalty',
+          'Awesomeness',
+          'Littlefinger\'s business'
         ],
         dislikes: [
-          'Birds',
-          'Red things',
-          'Danish food',
-          'Dead Batteries'
+          'People who try to kill Tyrion',
+          'Dishonor'
         ],
         inOffice: false
       }

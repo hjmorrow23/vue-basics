@@ -27,8 +27,9 @@
 
 <style scoped>
     .sidebar {
-        width: 225px;
+        width: 300px;
         position: absolute;
         left: 40px;
+        text-align: left;
     }
 </style>

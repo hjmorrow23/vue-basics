@@ -1,8 +1,8 @@
 <template>
     <div class="person-container">
         <h1 class="person-name" :data-id="user.id" @click.prevent="showUser">{{user.name}}</h1>
-        <span v-if="user.inOffice">Green</span>
-        <span v-if="!user.inOffice">Red</span>
+        <span class="green" v-if="user.inOffice"></span>
+        <span class="red" v-if="!user.inOffice"></span>
     </div>
 </template>
 
@@ -24,5 +24,27 @@
 <style scoped>
     h1 {
         cursor: pointer;
+    }
+
+    .person-name {
+        display: inline-block;
+        font-size: 20px;
+        margin-right: 20px;
+        width: 70%;
+    }
+
+    span {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        display: inline-block;
+    }
+
+    .green {
+        background-color: green;
+    }
+
+    .red {
+        background-color: red;
     }
 </style>
