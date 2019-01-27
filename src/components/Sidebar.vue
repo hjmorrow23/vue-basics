@@ -1,25 +1,26 @@
 <template>
     <section class="sidebar">
-        <Person v-for="user in users" :user="user"></Person>
+        <Person v-for="user in users" :user="user" :showUser="showUser"></Person>
     </section>
 </template>
 
 <script>
     import Person from "./Person.vue";
-    import people from "@/people.js";
+    // import people from "@/people.js";
 
     export default {
         name: "Sidebar",
+        props: {
+            users: Array,
+            showUser: Function
+        },
         data() {
             return {
-                users: people.people
+                // users: people.people
             }
         },
         components: {
             Person
-        },
-        mounted() {
-            console.log(this.users);
         }
     }
 </script>
