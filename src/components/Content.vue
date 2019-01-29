@@ -15,12 +15,13 @@
                     <li v-for="dislike in users[currentUserId].dislikes">{{dislike}}</li>
                 </ul>
             </article> 
+            <a href="" class="edit-button" @click.prevent="toggleEdit">Edit</a>
         </div>
         <div v-else>
             <label>Name:</label>
             <input type="text" class="user-input" v-model="users[currentUserId].name" />
             <label>Description:</label>
-            <input type="text" class="user-input" />
+            <input type="text" class="user-input long-input" v-model="users[currentUserId].description" />
             <!-- <article class="likes user-details">
                 <h2>Likes</h2>
                 <ul>
@@ -33,8 +34,9 @@
                     <li v-for="dislike in users[currentUserId].dislikes">{{dislike}}</li>
                 </ul>
             </article>  -->
+            <a href="" class="edit-button" @click.prevent="toggleEdit">Save</a>
         </div>
-        <a href="" class="edit-button" @click.prevent="toggleEdit">Edit</a>
+        
     </section>
 </template>
 
@@ -58,7 +60,7 @@
     }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
     .content-wrapper {
         width: calc(100% - 360px);
         position: absolute;
@@ -77,12 +79,37 @@
         vertical-align: top;
     }
 
+    label {
+        margin-bottom: 20px;
+    }
+
     .user-input {
         width: 200px;
         border: none;
         border-bottom: 1px solid rgba(0, 0, 0, .2);
         display: block;
-        margin: 0 auto 50px;
+        margin: 20px auto 50px;
+    }
+
+    .long-input {
+        width: 500px
+    }
+
+    .edit-button {
+        text-decoration: none;
+        border: 1px solid #000;
+        padding: 10px 20px;
+        color: #000;
+        border-radius: 5px;
+        background-color: transparent;
+        transition: color .35s, background-color .35s;
+        position: relative;
+        top: 50px;
+
+        &:hover {
+            color: #fff;
+            background-color: #000;
+        }
     }
 
     ul {

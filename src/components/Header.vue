@@ -1,6 +1,10 @@
 <template>
     <header class="main-header">
         <h1>Westeros Inc Office Directory</h1>
+        <nav>
+            <router-link to="/directory" class="nav-link">Home</router-link>
+            <router-link to="/about" class="nav-link">About</router-link>
+        </nav>
     </header>
 </template>
 
@@ -22,5 +26,17 @@
         color: #fff;
         margin: 0;
         padding-top: 5px;
+        display: inline-block;
+        margin-right: 80px;
+    }
+
+    nav {
+        display: inline-block;
+    }
+
+    .nav-link {
+        color: #fff;
+        text-decoration: none;
+        margin-right: 20px;
     }
 </style>
