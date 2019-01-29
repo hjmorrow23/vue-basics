@@ -14,7 +14,7 @@
     }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
     .main-header {
         height: 64px;
         background: #000;
@@ -38,5 +38,10 @@
         color: #fff;
         text-decoration: none;
         margin-right: 20px;
+        transition: color .35s;
+
+        &:hover {
+            color: darken(#fff, 40%);
+        }
     }
 </style>

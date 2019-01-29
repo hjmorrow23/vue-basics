@@ -2,6 +2,7 @@
     <section class="content-wrapper">
         <div v-if="!editing">
             <h1 class="user-name">{{users[currentUserId].name}}</h1>
+            <div :class="users[currentUserId].person + ' user-image'"></div>
             <p class="user-description">{{users[currentUserId].description}}</p>
             <article class="likes user-details">
                 <h2>Likes</h2>
@@ -115,5 +116,38 @@
     ul {
         list-style: none;
         padding: 0;
+    }
+
+    .user-image {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        margin: 30px auto;
+    }
+
+    .jon-snow {
+        background: url('../assets/jon-snow.jpg') no-repeat;
+        background-size: 300px;
+        background-position: -50px 0;
+    }
+    .danny {
+        background: url('../assets/danny-t.jpg') no-repeat;
+        background-size: 400px;
+        background-position: -80px 0;
+    }
+    .tyrion {
+        background: url('../assets/tyrion.gif') no-repeat;
+        background-size: 300px;
+        background-position: -25px 0;
+    }
+    .arya {
+        background: url('../assets/arya.jpg') no-repeat;
+        background-size: 300px;
+        background-position: -40px -10px;
+    }
+    .poddy {
+        background: url('../assets/poddy.png') no-repeat;
+        background-size: 400px;
+        background-position: -104px 0px;
     }
 </style>
